@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyShotBase : MonoBehaviour
+{
+    /// <summary>
+    /// âΩÇ©Ç…Ç‘Ç¬Ç©Ç¡ÇΩÇÁ
+    /// </summary>
+    // Start is called before the first frame update
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag != "Enemy")
+        {
+            if(other.tag == "MeinCamera")
+            {
+                //É_ÉÅÅ[ÉWÇéÛÇØÇÈ
+
+            }
+            Destroy(gameObject);
+        }
+    }
+
+}
